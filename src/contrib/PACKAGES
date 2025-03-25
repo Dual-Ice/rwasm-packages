@@ -43,7 +43,7 @@ Suggests: callr, covr, crayon, digest, glue (>= 1.6.0), grDevices,
         1.3.4.9000), rlang (>= 1.0.2.9003), rmarkdown, rprojroot,
         rstudioapi, testthat (>= 3.2.0), tibble, whoami, withr
 License: MIT + file LICENSE
-MD5sum: 38f3fb324af7decbb66d1014949bdb55
+MD5sum: 369370fea792a706e73debd4a61189e7
 NeedsCompilation: yes
 
 Package: colorspace
@@ -100,7 +100,7 @@ Depends: R (>= 3.2)
 Imports: methods
 Suggests: covr, pkgload, testthat (>= 3.0.0), tibble, withr
 License: MIT + file LICENSE
-MD5sum: daeca37a939d119fdd1c0df0207d1c60
+MD5sum: 997b188c8e49b43138ff348fb62434d1
 NeedsCompilation: no
 
 Package: ggplot2
@@ -250,7 +250,7 @@ Suggests: cli (>= 3.1.0), covr, crayon, fs, glue, knitr, magrittr,
         usethis, vctrs (>= 0.2.3), withr
 Enhances: winch
 License: MIT + file LICENSE
-MD5sum: 34ad1c67257291cba3b21d1eb790dda9
+MD5sum: bae4fe51ab6960dd5c81d5cd06a51010
 NeedsCompilation: yes
 
 Package: scales
