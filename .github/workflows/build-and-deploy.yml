@@ -19,9 +19,9 @@ jobs:
           packages: 'ggplot2,lubridate,data.table'
           repo-path: '_site'
           image-path: 'docs'
-          strip: NULL
-          compress: TRUE
-          dependencies: NA
+          strip: 'NULL'
+          compress: 'TRUE'
+          dependencies: 'NA'
 
       - name: Setup GitHub Pages
         run: |
