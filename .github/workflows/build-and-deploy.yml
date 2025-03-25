@@ -23,11 +23,6 @@ jobs:
           compress: 'TRUE'
           dependencies: 'NA'
 
-      - name: Setup GitHub Pages
-        run: |
-          touch _site/.nojekyll
-          echo 'dual-ice.github.io' > _site/CNAME
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
