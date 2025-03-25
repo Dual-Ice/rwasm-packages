@@ -1,0 +1,35 @@
+name: Build and Deploy R Packages for WebAssembly
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build R Packages for WebAssembly
+        uses: Dual-Ice/rwasm-actions/build-rwasm@main
+        with:
+          packages: 'ggplot2,lubridate,data.table'
+          repo-path: '_site'
+          image-path: 'docs'
+          strip: 'NULL'
+          compress: 'TRUE'
+          dependencies: 'NA'
+
+      - name: Setup GitHub Pages
+        run: |
+          touch _site/.nojekyll
+          echo 'dual-ice.github.io' > _site/CNAME
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
